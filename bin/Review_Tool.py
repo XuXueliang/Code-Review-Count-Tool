@@ -7,9 +7,9 @@ import sys
 sys.path.append('../') 
 from  conf.conf import *
 
-host = "reviewboard.eng.vmware.com"
+host = "reviewboard.eng.address.com"
 get_headers = {
-    'Host' : 'reviewboard.eng.vmware.com',
+    'Host' : 'reviewboard.eng.address.com',
     'Connection' : 'keep-alive' , 
     'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36',
@@ -89,7 +89,7 @@ def post_login():
 	url = '/account/login/'
 	values = {
 	  'username' : 'xux',
-	  'password' : 'Knight1990',
+	  'password' : 'pwd',
 	  'next_page' : '/dashboard/',
 	}
 
@@ -98,9 +98,9 @@ def post_login():
 	    'Content-Type': 'application/x-www-form-urlencoded',
 	    'Connection' : 'keep-alive',
 	    'Cookie':'s_vi=[CS]v1|297EE873851D1A76-6000013460010948[CE]; collapsediffs=True; rbsessionid=2158c3def7071636f012ac9ecb18bf84' ,  
-	    'Referer':'https://reviewboard.eng.vmware.com/account/login/',
-	    'Host' : 'reviewboard.eng.vmware.com',
-	    'Origin':'https://reviewboard.eng.vmware.com',
+	    'Referer':'https://reviewboard.eng.address.com/account/login/',
+	    'Host' : 'reviewboard.eng.address.com',
+	    'Origin':'https://reviewboard.eng.address.com',
 	    'Content-Type':'application/x-www-form-urlencoded',
 	    'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
 	}
